@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 <a href="https://ajaykumarbluewhale.github.io/My_portfolio/" target="_blank">
-  <img src="./img/thumbnail.png.jpeg" alt="Portfolio Thumbnail"/>
+  <img src="./Img/thumbnail.png.jpeg" alt="Portfolio Thumbnail"/>
 </a>
 
 Showcase your skills and personality with this **modern, responsive portfolio website** built using **HTML**, **CSS**, and **JavaScript**. This project highlights how to present your work professionally, featuring sleek UI design, smooth animations, and optimized structure — perfect for impressing recruiters and clients.
