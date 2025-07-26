@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Google Font: Montserrat --><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+   <link rel="Website icon" type="png" href="Img/target.png">
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="medio.css"/>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+  <title>Skiper/UI</title>
+  <style>div{
+      display: block;
+    unicode-bidi: isolate;
+}
+ blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #ccc;
+      padding-left: 10px;
+      margin-left: 0;
+
+
+    }
+          @media screen and (max-width: 768px) {
+            .bloody{
+                 height: 100px !important;
+              margin-top: 20px;
+              img{
+             object-fit: contain;
+          height: 100px !important;
+              }
+            }
+          }
+</style>
+</head>
+<body style="background-color: white; color: black;">
+<div id="menuOverlay" class="menu fixed top-0 z-[9998] text-white left-0 w-full h-full bg-black/70 backdrop-blur-xl hidden flex-col justify-center items-center text-3xl space-y-1 ">
+
+  <!-- ❌ Cross (Close) Button -->
+  <button id="closeBtn" class="absolute top-6 right-6  text-white text-8xl hover:scale-110 transition-transform">&times;</button>
+
+  <!-- 🔗 Menu Links -->
+  <a href="index.html" class="cursor-target">Home</a>
+ 
+  <a href="about.html" class="cursor-target">About</a>
+
+  <a href="blog.html" class="cursor-target">Blog</a>
+  <a href="contact.html" class="cursor-target">Contact</a> 
+<div class="flex gap-0">   
+  <a href="https://www.instagram.com/zackzyrical/" target="_blank"><img src="Img/instagram-48.png" class="social cursor-target" alt="instagram"></a>
+    <a href="https://www.linkedin.com/in/ajay-kumar-901150269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"><img src="Img/linked.png" class="social cursor-target" alt="Linkedin"></a>
+</div>
+
+</div>
+
+  <img id="navbar-text"
+       src="Img/Taaza Khabar.png"
+       alt="Navbar Text"
+       class=" absolute inset-0 object-contain mx-auto transition-all duration-300" style="width: 179px; height: 88px;" onclick="window.open('index.html', '_blank')" />
+<!-- ✅ Sticky Navbar -->
+<nav style="border: 2px black solid;"
+  class="sticky top-0 z-40 bg-white rounded-[20px] w-[100%] mx-auto  py-4 transition-all duration-300"
+  id="navbar"
+>
+  <div class="grid grid-cols-3 items-center gap-4 ">
+   
+    <!-- Left Column: Text or Logo -->
+<!-- Parent with fixed width/height and relative positioning -->
+
+
+<div class="relative w-[200px] h-[40px]">
+  <!-- Navbar Text as Image -->
+ <div id="scrollingText" style="color: black;" class="overflow-hidden z-50 hi text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl max-w-[770px] ">
+  <div class="animate-marquee whitespace-nowrap  inset-0 object-contain mx-auto transition-all duration-500">
+ +++ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Check out what I'm reading . I'm currently open to web development roles — feel free to reach out! +++
+  </div>
+</div>
+
+
+  <!-- Logo Image (initially hidden) -->
+  <img id="navbar-logo"
+       src="Img/sign_small.png"
+       alt="Logo"
+       class="absolute inset-0 object-contain mx-auto hidden transition-all duration-300" onclick="window.open('index.html', '_blank')" />
+</div>
+
+
+
+
+    <!-- Right Column 1 -->
+    <div class=" text-right ">
+      <a href="contact.html"  id="contact" style="border-left: 2px solid black;border-right: 2px solid black; border-radius: 20px;" class="text-white-700 text-black text-sm md:text-base">CONTACT</a>
+    </div>
+
+    <!-- Right Column 2 -->
+   <div class="text-right" id="hamb-div">
+  <a href="#" id="hamb" class="group inline-block p-0  ">
+ <img src="Img/burger.png" alt="">
+  </a>
+</div>
+  </div>
+</nav>
+<div class="relative bloody w-[100%]  mx-auto h-screen flex items-center justify-center  overflow-hidden" >
+<img class="" style="width: 85%; height: 600px;" src="Img/og.png" alt="gifs">
+
+
+</div>
+<div class="relative w-[90%] main text-black " >
+  <div class="bio-text">
+    <div class="Category">Library</div>
+  <h1 class="header-pro">Skiper/ui</h1>
+</div>
+<div>
+<h1>by ajaykumar | &#x1F3E0; Studio:  Czech</h1>
+</div>
+<div>
+  I explored a modern UI library this week called <strong>Skiper UI</strong>, and I genuinely feel like it deserves way more attention than it’s getting. It’s been stuck in my mind ever since I started using it, and I really want to put my thoughts into words. This is a spoiler-free review — just me sharing what I loved about the experience.
+</div>
+
+<div >
+  <img style="width: 100%; height: 600px;" class="bloody" src="Img/skiper.png" alt="map">
+</div>
+<article>
+  <h1 class="header-pro1">How It Started</h1>
+
+  <p>It’s Monday, and I’m not really in the mood to work on my usual design systems. So, I took a quick scroll through Instagram to clear my head. That’s when I stumbled upon a reel by <strong>@sheryians_coding_school</strong> — and in that short clip, they were showcasing something that instantly caught my attention: <strong>Skiper UI</strong>.</p>
+
+  <blockquote>Modern React + Tailwind UI components with motion and polish</blockquote>
+
+  <p>I'd never heard of it before, but the sleek motion, crisp UI, and animated components shown in the reel immediately hooked me. It looked fresh, flexible, and exactly the kind of developer-friendly tool I love exploring. So, I followed the link, checked the docs, and the deeper I went, the more impressed I became.</p>
+
+  <p><strong>Skiper UI</strong> is a modern component library built with React, Tailwind CSS, TypeScript, and Framer Motion. It’s one of those rare indie projects that feels instantly premium — like it was created by someone who truly cares about both developer ergonomics and clean design.</p>
+
+  <p><em>"Like shadcn/ui, but built with animation in its DNA"</em> – that’s how I’d describe it in a nutshell. But saying that barely scratches the surface. The components are responsive, easy to customize, and genuinely enjoyable to use. The experience of combining structure with motion adds personality to even basic UI elements.</p>
+
+  <p>What really stood out to me was how interactive everything felt. From buttons to cards to dropdowns — nothing felt static. The motion is smooth but not distracting, and it gives your projects that extra polish with minimal effort. And the documentation? Super clean and easy to follow. You can tell this library was built for devs who want results fast, without sacrificing quality.</p>
+</article>
+
+
+
+<iframe width="100%" height="600px" src="https://www.youtube.com/embed/YuINmZkAViU?si=Sz9BQgcjWIBCgBjW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<article>
+  <h1 class="header-pro1">What Surprised Me About Skiper UI</h1>
+
+  <p>I didn’t go looking for a new UI library — it found me. While scrolling through Instagram, a reel from <strong>@sheryians_coding_school</strong> flashed by, showcasing smooth UI transitions, beautifully animated buttons, and sleek modern components. That was my introduction to <strong>Skiper UI</strong>. I paused. Rewatched. Then dove in.</p>
+
+  <p>At first, I assumed it was just another Tailwind + React component combo — but I was wrong. Skiper UI isn’t trying to be a giant all-in-one framework. It’s focused. Clean. Sharp. Every component feels deliberate, as if made by a designer who’s also a developer — or vice versa. This isn’t just UI, it’s rhythm.</p>
+
+  <blockquote>
+    "You don’t just drop components — you craft motion, layout, and emotion into your interface."
+  </blockquote>
+
+  <p>As I explored more, it clicked. This wasn’t built for beginners or bloated dashboards. It was for builders who value movement, clarity, and fast iteration — especially those working with <strong>Next.js</strong> or <strong>React.js</strong> projects. The animations are subtle but effective. The styling respects Tailwind’s utility power while giving you a modern, polished edge.</p>
+
+  <p>Above this article, I’ve included a short video that walks you through the magic. It highlights exactly what I experienced — the fluidity of cards, the way modals pop with personality, and how quick it is to get started. If you're curious what it feels like to use Skiper UI without writing a single line of code first, watch that demo.</p>
+
+  <p>Honestly, it reminded me why I love frontend development. The small details — transitions, hover delays, easing curves — they’re all there, and they matter. Skiper UI doesn’t scream for attention, but it earns it.</p>
+
+  <p>If you're a developer looking for motion-first, production-ready UI components that just "click" with Tailwind and React, don’t overlook this one. Skiper UI is a quiet powerhouse — and once you try it, it’s hard to go back.</p>
+</article>
+
+
+
+<h1 class="header-pro1">It’s totally free to play — and that’s hard to beat! Download it now on the Google Play Store and start brawling.</h1>
+
+
+<img class="last-img"  src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTFjaG1wM3o0ZzBlbXA2Z2Ywc243d2ttdGZpZXVpbXdmYjJreHp5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sZ7wUinnbIQYlucMXv/giphy.gif">
+</div>
+
+
+
+<footer class="w-[90%] mx-auto mt-10 mb-4 border border-black text-black text-sm md:text-base p-4 rounded-[20px]">
+  <div class="flex flex-col-2 gap-2 text-left">
+    <div class="flex gap-4">
+      <a href="#" class="hover:underline" onclick="window.open('imprint.html', '_blank')">Imprint</a>
+      <a href="#" class="hover:underline" onclick="window.open('privacy.html', '_blank')">Privacy Policy</a>
+    </div>
+    <div>
+      © 2024 AJAY KUMAR | Created in 2025
+    </div>
+    
+  </div>
+
+</footer>
+<div id="bottom" class="fixed right-4 bottom-[20%] z-20">
+  <a href="#" class="top">
+    <!-- From Uiverse.io by Creatlydev -->
+    <button class="button">
+      <p class="button__text">
+        <span style="--index: 0;">B</span>
+        <span style="--index: 1;">A</span>
+        <span style="--index: 2;">C</span>
+        <span style="--index: 3;">K</span>
+        <span style="--index: 4;"></span>
+        <span style="--index: 5;">T</span>
+        <span style="--index: 6;">0</span>
+        <span style="--index: 7;"> </span>
+        <span style="--index: 8;">T</span>
+        <span style="--index: 9;">0</span>
+        <span style="--index: 10;">P</span>
+        <span style="--index: 11;">.</span>
+        <span style="--index: 12;">.</span>
+        <span style="--index: 13;">.</span>
+        <span style="--index: 14;">.</span>
+        <span style="--index: 15;">.</span>
+        <span style="--index: 16;">.</span>
+        <span style="--index: 17;">.</span>
+      </p>
+
+      <div class="button__circle">
+        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon" width="14">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"></path>
+        </svg>
+
+        <svg viewBox="0 0 14 15" fill="none" width="14" xmlns="http://www.w3.org/2000/svg"
+          class="button__icon button__icon--copy">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"></path>
+        </svg>
+      </div>
+    </button>
+  </a>
+</div>
+<div id="target-cursor" class="target-cursor-wrapper">
+    <div class="target-cursor-dot"></div>
+    <div class="target-cursor-corner corner-tl"></div>
+    <div class="target-cursor-corner corner-tr"></div>
+    <div class="target-cursor-corner corner-br"></div>
+    <div class="target-cursor-corner corner-bl"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

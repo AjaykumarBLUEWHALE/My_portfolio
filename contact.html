@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Google Font: Montserrat --><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="medio.css"/>
+   <link rel="Website icon" type="png" href="Img/target.png">
+      <script src="https://cdn.tailwindcss.com"></script>
+     
+    <title>Contact</title>
+
+<style>
+body{
+  background-color: white;
+  color: black;
+}
+  .container {
+    display: flex;
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+  }
+
+  .main-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .right-grid {
+    width: 500px;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2fr);
+    gap: 8px;
+  
+    padding: 8px;
+  }
+
+  .main-grid div {
+    height: 100%;
+       color: black;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+     font-family: 'Anton', sans-serif; 
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 110%;
+  }
+
+  .right-grid div {
+    height: 100%;
+  }
+  .mail{
+display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 8px;
+
+  }
+  .mail a{
+ 
+  font-size: 60px !important;
+  font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+text-decoration: underline;
+
+
+  }
+  .mail a:hover{
+   
+  text-decoration: none;
+  }
+  @media screen and (max-width: 768px) {
+      .mail a{
+    font-size: 16px !important;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+  }
+  .mail img{
+    width: 80px;
+    height: 50px;
+  }
+ 
+  }
+  /* From Uiverse.io by PriyanshuGupta28 */ 
+.checkbox-wrapper {
+  box-sizing: border-box;
+ 
+  --checkbox-height: 25px;
+}
+
+.checkbox-wrapper input[type=checkbox] {
+  display: none !important;
+}
+
+.checkbox-wrapper .check-box {
+  height: var(--checkbox-height);
+  width: var(--checkbox-height);
+  background-color: transparent;
+  border: calc(var(--checkbox-height) * .1) solid black;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: border-color ease 0.2s;
+  -o-transition: border-color ease 0.2s;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.checkbox-wrapper .check-box::before,
+  .checkbox-wrapper .check-box::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: calc(var(--checkbox-height) * .2);
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  display: inline-block;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-radius: 5px;
+  content: " ";
+  -webkit-transition: opacity ease 0.5;
+  -moz-transition: opacity ease 0.5;
+  transition: opacity ease 0.5;
+}
+
+.checkbox-wrapper .check-box::before {
+  top: calc(var(--checkbox-height) * .72);
+  left: calc(var(--checkbox-height) * .41);
+  box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.checkbox-wrapper .check-box::after {
+  top: calc(var(--checkbox-height) * .37);
+  left: calc(var(--checkbox-height) * .05);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + .check-box,
+  .checkbox-wrapper .check-box.checked {
+  border-color: #5900ff;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + .check-box::after,
+  .checkbox-wrapper .check-box.checked::after {
+  height: calc(var(--checkbox-height) / 2);
+  -moz-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+  -o-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+  -webkit-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+  animation: dothabottomcheck-19 0.2s ease 0s forwards;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + .check-box::before,
+  .checkbox-wrapper .check-box.checked::before {
+  height: calc(var(--checkbox-height) * 1.2);
+  -moz-animation: dothatopcheck-19 0.4s ease 0s forwards;
+  -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
+  -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
+  animation: dothatopcheck-19 0.4s ease 0s forwards;
+}
+
+.contact-form{
+  font-size: 46px;
+}
+</style>
+
+
+
+</head>
+<body>
+<div id="menuOverlay" class="menu fixed top-0 z-[9998] text-white left-0 w-full h-full bg-black/70 backdrop-blur-xl hidden flex-col justify-center items-center text-3xl space-y-1 ">
+
+  <!-- ❌ Cross (Close) Button -->
+  <button id="closeBtn" class="absolute top-6 right-6  text-white text-8xl hover:scale-110 transition-transform">&times;</button>
+
+  <!-- 🔗 Menu Links -->
+  <a href="index.html" class="cursor-target">Home</a>
+ 
+  <a href="about.html" class="cursor-target">About</a>
+
+  <a href="blog.html" class="cursor-target">Blog</a>
+  <a href="contact.html" class="cursor-target">Contact</a> 
+<div class="flex gap-0">   
+  <a href="https://www.instagram.com/zackzyrical/" target="_blank"><img src="Img/instagram-48.png" class="social cursor-target" alt="instagram"></a>
+    <a href="https://www.linkedin.com/in/ajay-kumar-901150269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"><img src="Img/linked.png" class="social cursor-target" alt="Linkedin"></a>
+</div>
+
+</div>
+  <img id="navbar-text"
+       src="Img/Taaza Khabar.png"
+       alt="Navbar Text"
+       class=" absolute inset-0 object-contain mx-auto transition-all duration-300" style="width: 179px; height: 88px;" onclick="window.open('index.html', '_blank')" />
+
+<!-- ✅ Sticky Navbar -->
+<nav style="border: 2px black solid;"
+  class="sticky top-0 z-40 bg-white rounded-[20px] w-[100%] mx-auto  py-4 transition-all duration-300"
+  id="navbar"
+>
+  <div class="grid grid-cols-3 items-center gap-4 ">
+   
+    <!-- Left Column: Text or Logo -->
+<!-- Parent with fixed width/height and relative positioning -->
+
+
+<div class="relative w-[200px] h-[40px]">
+  <!-- Navbar Text as Image -->
+ <div id="scrollingText" style="color: black;" class="overflow-hidden z-50 hi text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl max-w-[770px] ">
+  <div class="animate-marquee whitespace-nowrap  inset-0 object-contain mx-auto transition-all duration-500">
++++ +++ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Check out what I'm reading . I'm currently open to web development roles — feel free to reach out! +++
+
+  </div>
+</div>
+
+
+  <!-- Logo Image (initially hidden) -->
+  <img id="navbar-logo"
+       src="Img/sign_small.png"
+       alt="Logo"
+       class="absolute inset-0 object-contain mx-auto hidden transition-all duration-300" onclick="window.open('index.html', '_blank')"/>
+</div>
+
+
+
+
+    <!-- Right Column 1 -->
+    <div class=" text-right ">
+      <a href="contact.html"  id="contact" style="border-left: 2px solid black;border-right: 2px solid black; border-radius: 20px;" class="text-white-700 text-black text-sm md:text-base">CONTACT</a>
+    </div>
+
+    <!-- Right Column 2 -->
+   <div class="text-right" id="hamb-div">
+  <a href="#" id="hamb" class="group inline-block p-0  ">
+ <img src="Img/burger.png" alt="">
+  </a>
+</div>
+  </div>
+</nav>
+<div class="container w-[90%] mx-auto flex  overflow-hidden ">
+  <div class="main-grid text-black ">
+    <div >CONTACT</div>
+<p>I am always open to talk. Whether you just want to connect or want to work with me. I would be happy to hear from you! Feel free to write me a message using the form or by email, whichever you prefer. Smell you later.</p>
+  </div>
+  <div class="right-grid">
+    <div><img src="Img/postcard.png" alt="postcard"></div>
+   
+  </div>
+</div>
+<div class=" mail w-[90%] mx-auto flex text-black  ">
+  <div><img src="https://www.animatedimages.org/data/media/235/animated-email-image-0060.gif" alt="email"></div>
+    <div><a href="mailto:ajaykumar8752124@gmail.com" class=" cursor-target " >ajaykumar8752124@gmail.com</a></div>
+</div>
+<form action="https://api.web3forms.com/submit" method="POST" >
+    <input type="hidden" name="access_key" value="5da5b49b-7c20-4620-a277-b5953442eda3">
+  <div class=" contact-form w-[90%] mx-auto  p-4 g space-y-1/2 bg-white mt-3  ">
+
+  <!-- 1. First row: Full-width div -->
+   <input type="text" class="w-full rounded-t-2xl p-2 h-28  border border-black bg-white p-4 cursor-target" placeholder="Name*" />
+  <!--<div class="bg-blue-300 p-4">This div takes full width</div>-->
+
+  <!-- 2. Second row: Two divs 50%-50% -->
+ <div class="flex gap-0">
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="E-mail"
+    required
+    class="cursor-target  submit w-1/2 h-28 p-4 border-l border-r-0 border-black border-t-0 border-b-0"
+  />
+  <input
+    type="tel"
+    maxlength="10"
+    pattern="\d{10}"
+    inputmode="numeric"
+    id="phone"
+    name="phone"
+    placeholder="TEL"
+    required
+    class="cursor-target  submit w-1/2 h-28 p-4 border-r border-l border-black border-t-0 border-b-0 bg-white"
+  />
+</div>
+
+
+  <!-- 3. Third row: Textarea with message -->
+  <div>
+  <textarea 
+    name="message" 
+    class="w-full h-80 bg-white cursor-target p-4 border border-b-0 border-black  placeholder cursor-text" 
+    placeholder="Message" 
+    required></textarea>
+</div>
+
+
+  <!-- 4. Fourth row: Three divs -->
+  <!-- 4. Fourth row: Three divs correctly structured -->
+<div class="grid grid-cols-3 rounded-b-2xl mt-[-18px] border border-black h-28 ">
+ 
+<!-- From Uiverse.io by PriyanshuGupta28 --> 
+<div class="checkbox-wrapper flex items-center    justify-center  border-none  ">
+  <input id="cbtest-19" type="checkbox">
+  <label class="check-box" for="cbtest-19">
+</label></div>
+
+
+  
+
+
+  <!-- 2nd Div: Terms & conditions text -->
+  <div class="flex items-center border border-b-0 border-t-0 text-black  border-black p-4 cursor-target">
+    <label for="accept" class="text-sm  "  onclick="window.open('privacy.html', '_blank')">
+      Yes, I agree to terms and conditions
+    </label>
+  </div>
+
+  <!-- 3rd Div: Submit Button -->
+  <div class=" submit items-center justify-center border-none cursor-target">
+    <button class=" text-black px-4 py-2  ">
+      Submit
+    </button>
+  </div>
+</div>
+
+
+</div>
+</form>
+<footer class="w-[90%] mx-auto mt-10 mb-4 border border-black text-black text-sm md:text-base p-4 rounded-[20px]">
+  <div class="flex flex-col-2 gap-2 text-left">
+    <div class="flex gap-4">
+      <a href="#" class="hover:underline" onclick="window.open('imprint.html', '_blank')">Imprint</a>
+      <a href="#" class="hover:underline" onclick="window.open('privacy.html', '_blank')">Privacy Policy</a>
+    </div>
+    <div>
+      © 2024 AJAY KUMAR | Created in 2025
+    </div>
+    
+  </div>
+
+</footer>
+<div id="bottom" class="fixed right-4 bottom-[20%] z-20">
+  <a href="#" class="top">
+    <!-- From Uiverse.io by Creatlydev -->
+    <button class="button">
+      <p class="button__text">
+        <span style="--index: 0;">B</span>
+        <span style="--index: 1;">A</span>
+        <span style="--index: 2;">C</span>
+        <span style="--index: 3;">K</span>
+        <span style="--index: 4;"></span>
+        <span style="--index: 5;">T</span>
+        <span style="--index: 6;">0</span>
+        <span style="--index: 7;"> </span>
+        <span style="--index: 8;">T</span>
+        <span style="--index: 9;">0</span>
+        <span style="--index: 10;">P</span>
+        <span style="--index: 11;">.</span>
+        <span style="--index: 12;">.</span>
+        <span style="--index: 13;">.</span>
+        <span style="--index: 14;">.</span>
+        <span style="--index: 15;">.</span>
+        <span style="--index: 16;">.</span>
+        <span style="--index: 17;">.</span>
+      </p>
+
+      <div class="button__circle">
+        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon" width="14">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"></path>
+        </svg>
+
+        <svg viewBox="0 0 14 15" fill="none" width="14" xmlns="http://www.w3.org/2000/svg"
+          class="button__icon button__icon--copy">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"></path>
+        </svg>
+      </div>
+    </button>
+  </a>
+</div>
+<div id="target-cursor" class="target-cursor-wrapper">
+    <div class="target-cursor-dot"></div>
+    <div class="target-cursor-corner corner-tl"></div>
+    <div class="target-cursor-corner corner-tr"></div>
+    <div class="target-cursor-corner corner-br"></div>
+    <div class="target-cursor-corner corner-bl"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

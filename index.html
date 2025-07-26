@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Google Font: Montserrat -->
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <link rel="Website icon" type="png" href="Img/target.png">
+<link rel="stylesheet" href="medio.css"/>
+    <title>Home</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+      body{
+        background-color: white;
+        color: black;
+      }
+  .profile-container {
+    position: relative;
+    display: inline-block;
+    height: 470px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+  .profile {
+    display: block;
+    height: 500px;
+    padding: 16px;
+   
+  }
+
+  .hover-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(238, 0, 0, 0.6); /* semi-transparent background */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    font-size: 18px;
+  }
+.view:hover{
+    box-shadow: 5px -5px black;
+}
+  
+
+  .illustrations {
+    font-size: 45px;
+            font-weight: 700;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 20px;
+}
+ .illustrations:hover {
+      transform: scaleY(-1);
+      box-shadow: 20px -12px black;
+      background-color: teal;
+       border-radius: 20px;
+    }
+      .text-scroll-container {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+    .text-scroll {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      padding-left: 100%;
+      animation: scrollText 10s linear infinite;
+    }
+    @keyframes scrollText {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @media (min-width: 768px) {
+      .text-scroll {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+    }
+
+    
+</style>
+
+ 
+
+</head>
+<body >
+
+<div id="menuOverlay" class="menu fixed top-0 z-[9998] text-white left-0 w-full h-full bg-black/70 backdrop-blur-xl hidden flex-col justify-center items-center text-3xl space-y-1 ">
+
+  <!-- ❌ Cross (Close) Button -->
+  <button id="closeBtn" class="absolute top-6 right-6  text-white text-8xl hover:scale-110 transition-transform">&times;</button>
+
+  <!-- 🔗 Menu Links -->
+  <a href="index.html" class="cursor-target">Home</a>
+ 
+  <a href="about.html" class="cursor-target">About</a>
+
+  <a href="blog.html" class="cursor-target">Blog</a>
+  <a href="contact.html" class="cursor-target">Contact</a> 
+<div class="flex gap-0">   
+  <a href="https://www.instagram.com/zackzyrical/" target="_blank"><img src="Img/instagram-48.png" class="social cursor-target" alt="instagram"></a>
+    <a href="https://www.linkedin.com/in/ajay-kumar-901150269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"><img src="Img/linked.png" class="social cursor-target" alt="Linkedin"></a>
+</div>
+
+</div>
+
+  <img id="navbar-text"
+       src="Img/Taaza Khabar.png"
+       alt="Navbar Text"
+       class=" absolute inset-0 object-contain mx-auto transition-all duration-300" style="width: 179px; height: 88px;"   />
+<!-- ✅ Sticky Navbar -->
+<nav style="border: 2px black solid;"
+  class="sticky top-0 z-40 bg-white rounded-[20px] w-[100%] mx-auto  py-4 transition-all duration-300"
+  id="navbar"
+>
+  <div class="grid grid-cols-3 items-center gap-4 ">
+   
+    <!-- Left Column: Text or Logo -->
+<!-- Parent with fixed width/height and relative positioning -->
+
+
+<div class="relative w-[200px] h-[40px]">
+  <!-- Navbar Text as Image -->
+ <div id="scrollingText" style="color: black;" class="overflow-hidden z-50 hi text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl max-w-[770px] ">
+  <div class="animate-marquee whitespace-nowrap  inset-0 object-contain mx-auto transition-all duration-500">
++++ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Check out what I'm reading . I'm currently open to web development roles — feel free to reach out! +++
+
+  </div>
+</div>
+
+
+  <!-- Logo Image (initially hidden) -->
+  <img id="navbar-logo"
+       src="Img/sign_small.png"
+       alt="Logo"
+       class="absolute inset-0 object-contain mx-auto hidden transition-all duration-300" />
+</div>
+
+
+
+
+    <!-- Right Column 1 -->
+    <div class=" text-right ">
+      <a href="contact.html"  id="contact" style="border-left: 2px solid black;border-right: 2px solid black; border-radius: 20px;" class="text-white-700 text-black text-sm md:text-base">CONTACT</a>
+    </div>
+
+    <!-- Right Column 2 -->
+   <div class="text-right" id="hamb-div">
+  <a href="#" id="hamb" class="group inline-block p-0  ">
+ <img src="Img/burger.png" alt="">
+  </a>
+</div>
+  </div>
+</nav>
+<!-- ✅ Section: 90% Width, Matching Navbar -->
+<section class="relative w-[90%] mb-[-10px] mx-auto h-screen flex items-center justify-center overflow-hidden">
+
+  <!-- ✅ Background Video or Image (restricted to 90% width) -->
+  <video
+    autoplay
+    muted
+    loop
+    class="absolute top-0 left-0 w-full h-full object-cover z-0  rounded-[40px] "
+  >
+    <source src="videos/2539559-hd_1920_1080_24fps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ✅ Second Image (above video) -->
+  <img
+    src="Img/Ajay1__1_-removebg-preview-removebg-preview.png"
+    alt="Second Image"
+    class="absolute ajay-bg w-3/4 sm:w-2/3 md:w-1/2 z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+  />
+
+  <!-- ✅ Third Image (above second image) -->
+  <img
+    src="Img/sign_small.png"
+    alt="Third Image"
+    class="sec-img absolute w-1/3 sm:w-1/4 md:w-1/5 z-20 top-1/3 left-1/2 transform -translate-x-1/2"
+  />
+  <h1 class="absolute flex w-1/3 sm:w-1/4 md:w-1/5 z-20 top-2/3 left-1/2 transform -translate-x-1/2 cursor-target" style="color: white;">
+    WEBDESIGNER & FULLSTACK DEVELOPER
+  </h1>
+</section>
+<div class="w-[90%]  mx-auto grid grid-cols-1 py-12 md:grid-cols-2 gap-2">
+  <!-- First Grid Block -->
+  <div class=" text-black p-6 h-[500px] mt-[-20px]"  data-aos="fade-up">
+  <div class="profile-container " >
+    <img class="profile rounded-[30px]" src="Img/me2.jpeg" alt="Me">
+
+
+  
+  </div>
+  </div>
+
+  <!-- Second Grid Block -->
+  <div class="bg-white text-black p-6 h-[400px] "  data-aos="fade-up">
+  <div class="conatiner w-[90%] mx-auto mt-3">
+    <div class=" hello  cursor-target" >NAMASTE!</div>
+  <div class="my-2 bio" data-aos="fade-up"
+     data-aos-duration="3200">I'm Ajay Kumar, A full-stack developer and web designer based in Delhi, India. During the day, I build scalable web applications and design responsive user interfaces. At night, I refine layouts and explore new design trends. Interested in web development or design? Don't Go Anywhere Come To Me</div>
+  <div class="illustrations" data-aos="fade-up"
+     data-aos-duration="3300"><a href="https://github.com/AjaykumarBLUEWHALE?tab=repositories">ILLUSTRATIONS</a></div>
+    
+  </div>
+  
+  </div>
+</div>
+<div class="w-[90%] mx-auto mt-[100px] border border-black p-4 rounded-[30px]">
+  <!-- Top Div -->
+  <div class=" card1 text-black flex items-center justify-between py-[20px] rounded-[30px] border border-black m-0 mb-6">
+<div style=" left: 90px; font-weight: 700;  font-size: 60px;  " class=" work  ml-4 flex items-center" data-aos="fade-up"  data-aos-duration="2000"
+     >WORK</div>
+<div style="right: 90px; font-size: 40px; font-weight: 700;" class=" view rounded-[30px]  mr-4 p-4 border border-black"><a href="https://github.com/AjaykumarBLUEWHALE?tab=repositories" target="_blank">VIEW MORE</a></div>
+ 
+  </div>
+
+  <!-- Bottom Div with 3 Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class=" text-white p-4 text-center cursor-target"  data-aos="fade-up" >
+  <a href="https://ajaykumarbluewhale.github.io/MCODE/" target="_blank">
+  <img src="https://raw.githubusercontent.com/MiladiCode/3D-startup-app/main/thumbnail.png" alt="Thumbnail"/>
+</a>
+    </div>
+    <div class=" text-white p-4 text-center cursor-target"  data-aos="fade-up">
+       <a href="https://ajaykumarbluewhale.github.io/Redefine_Game-Website/" target="_blank">
+  <img src="https://raw.githubusercontent.com/AjaykumarBLUEWHALE/Redefine_Game-Website/master/img/thumbnail.png" alt="Thumbnail"/>
+</a>
+    </div>
+    <div class=" text-black p-4 text-center cursor-target"  data-aos="fade-up">
+      <a href="https://ajaykumarbluewhale.github.io/Love-Calculator/" target="_blank">
+  <img src="Img/loved.png" alt="Thumbnail"/>
+</a>
+    </div>
+  </div>
+</div>
+
+<div class="w-[100%] mx-auto mt-[100px] p-4">
+
+  <div class="text-scroll-container">
+    <div class="text-scroll">HTML &nbsp; CSS &nbsp; JavaScript &nbsp; REACT JS &nbsp; BOOTSTRAP
+      Tailwind CSS &nbsp; NODE JS  &nbsp; MONGO DB &nbsp; EXPRESS JS &nbsp; GIT & GITHUB   &nbsp; NETLIFY &nbsp; YOU NEED MORE &#128553;
+   </div>
+  </div>
+</div>
+</div>
+<div class="w-[90%] mx-auto mt-[100px] border border-black p-4 rounded-[20px]">
+  <!-- Top Div -->
+  <div class=" text-black flex items-center justify-between py-[20px] border border-black z-10 mb-6 rounded-[20px]">
+<div style=" left: 90px; font-weight: 700;  font-size: 60px;" class=" work ml-4 flex items-center"  data-aos="fade-up" data-aos-duration="2000">BLOG</div>
+<div style="right: 90px; font-size: 40px; font-weight: 700;" class=" article mr-4 rounded-[20px] p-4 border border-black"><a href="/blog.html" target="_blank">ALL ARTICLES</a></div>
+  </div>
+
+  <!-- Bottom Div with 3 Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[-24px] sm:gap-[9px] ">
+    <div class="  hover:bg-black hover:text-white transition duration-200 p-4 text-center blog1 mt-3 rounded-[20px] " data-aos="fade-up"  onclick="window.open('night_crawler.html', '_blank')" >
+      <h3 class="text-lg font-semibold">Movie Review</h3>
+   <h4>Night Crawler</h4>
+   <p>Lou Bloom, a petty thief, becomes a photojournalist and sells footage of sensational and violent stories in Los Angeles to Nina, a news director. Soon, Lou turns desperate to .....</p>
+   <img src="Img/arrow-removebg-preview.png" alt="arrow"  onclick="window.open('night_crawler.html', '_blank')">
+    </div>
+    <div class=" hover:bg-black hover:text-white  transition duration-200 p-4 text-center blog1 mt-3 rounded-[20px] " data-aos="fade-up"  onclick="window.open('bloody_bastards.html', '_blank')">
+<h3 class="text-lg font-semibold">Game</h3>
+   <h4>Bloody Bastards</h4>
+   <p>Bloody Bastards is a free-to-play action fighting game available on the Google Play Store, developed by Tibith. It features unique 2D physics-based combat where players .......</p>
+   <img src="Img/arrow-removebg-preview.png" alt="arrow"  onclick="window.open('bloody_bastards.html', '_blank')">
+    </div>
+    <div class=" hover:bg-black hover:text-white  transition duration-200 p-4 text-center blog1 mt-3 rounded-[20px]" data-aos="fade-up"  onclick="window.open('skiper_UI.html', '_blank')">
+ <h3 class="text-lg font-semibold">Library</h3>
+   <h4>Skipper/UI</h4>
+   <p>Skipper/UI is an open‑source library of animated, interactive, and customizable React components, designed to help developers build visually striking, dyn.... </p>
+<img src="Img/arrow-removebg-preview.png" alt="arrow"  onclick="window.open('skiper_UI.html', '_blank')">
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="w-[90%] mx-auto mt-10 info">
+  <h1 style="font-size: 35px;" class="msg">I am always open for exciting projects. Don‘t hesitate to contact me!</h1>
+  
+  <a href="mailto:ajaykumar8752124@gmail.com" class="hover:underline email cursor-target">ajaykumar8752124@gmail.com</a>
+
+</div>
+<footer class="w-[90%] mx-auto mt-10 mb-4 border border-black text-black text-sm md:text-base p-4 rounded-[20px]">
+  <div class="flex flex-col-2 gap-2 text-left">
+    <div class="flex gap-4">
+      <a href="#" class="hover:underline" onclick="window.open('imprint.html', '_blank')">Imprint</a>
+      <a href="#" class="hover:underline" onclick="window.open('privacy.html', '_blank')">Privacy Policy</a>
+    </div>
+    <div>
+      © 2024 AJAY KUMAR | Created in 2025
+    </div>
+    
+  </div>
+
+</footer>
+<div id="bottom" class="fixed right-4 bottom-[20%] z-20">
+  <a href="#" class="top">
+    <!-- From Uiverse.io by Creatlydev -->
+    <button class="button">
+      <p class="button__text">
+        <span style="--index: 0;">B</span>
+        <span style="--index: 1;">A</span>
+        <span style="--index: 2;">C</span>
+        <span style="--index: 3;">K</span>
+        <span style="--index: 4;"></span>
+        <span style="--index: 5;">T</span>
+        <span style="--index: 6;">0</span>
+        <span style="--index: 7;"> </span>
+        <span style="--index: 8;">T</span>
+        <span style="--index: 9;">0</span>
+        <span style="--index: 10;">P</span>
+        <span style="--index: 11;">.</span>
+        <span style="--index: 12;">.</span>
+        <span style="--index: 13;">.</span>
+        <span style="--index: 14;">.</span>
+        <span style="--index: 15;">.</span>
+        <span style="--index: 16;">.</span>
+        <span style="--index: 17;">.</span>
+      </p>
+
+      <div class="button__circle">
+        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon" width="14">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"></path>
+        </svg>
+
+        <svg viewBox="0 0 14 15" fill="none" width="14" xmlns="http://www.w3.org/2000/svg"
+          class="button__icon button__icon--copy">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"></path>
+        </svg>
+      </div>
+    </button>
+  </a>
+</div>
+
+
+
+<div id="target-cursor" class="target-cursor-wrapper">
+    <div class="target-cursor-dot"></div>
+    <div class="target-cursor-corner corner-tl"></div>
+    <div class="target-cursor-corner corner-tr"></div>
+    <div class="target-cursor-corner corner-br"></div>
+    <div class="target-cursor-corner corner-bl"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+  
+
+<script>
+  window.addEventListener('scroll', function () {
+    const scrollingText = document.getElementById('scrollingText');
+    const scrollPosition = window.scrollY; // current vertical scroll
+    const navText = document.getElementById('navbar-text');
+    const navLogo = document.getElementById('navbar-logo');
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight; // total scrollable height
+    const scrollPercentage = (scrollPosition / pageHeight) * 100;
+   const isDesktop = window.innerWidth >= 768;
+    if (scrollPercentage > 20) {
+      scrollingText.style.display = 'none';
+        navText.style.display='none';
+    }
+    
+    else if(scrollPercentage>18.8){
+      navLogo.style.display='block';
+    } else if (isDesktop){
+navText.style.display = 'block';
+scrollingText.style.display = 'block';
+      navLogo.style.display = 'none';
+    }
+  });
+</script>
+
+<!-- ✅ JavaScript to Toggle Menu -->
+
+ <script src="script.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
