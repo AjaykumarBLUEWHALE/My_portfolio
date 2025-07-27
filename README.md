@@ -39,18 +39,29 @@ Showcase your skills and personality with this **modern, responsive portfolio we
 
 ## 📁 Project Structure
 /Img/                  # Folder for images
+
 /videos/               # Folder for videos
 
 about.html             # About Me page
+
 blog.html              # Blog listing or article page
+
 bloody_bastards.html   # A project or article (possibly a game write-up)
+
 contact.html           # Contact page
+
 imprint.html           # Legal imprint / site info
+
 index.html             # Homepage
+
 medio.css              # Main stylesheet
-night_crawler.html     # Another project or article
+
+night_crawler.html     # Movie review or article
+
 privacy.html           # Privacy policy
+
 script.js              # Main JavaScript file
-skiper_UI.html         # Another project showcase or article
+
+skiper_UI.html         #  Library review or article
 
 
