@@ -677,3 +677,16 @@ section{
         transform: translateX(-50%);
       }
     }
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 375px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 3) {
+section h1{
+ body {
+    cursor: none !important;
+  }
+}
+ 
+}
+
