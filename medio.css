@@ -256,7 +256,7 @@ h4{
 }
 
 .animate-marquee {
-  animation: marquee 12s linear infinite;
+  animation: marquee 7s linear infinite;
   font-size: 46px;
   font-weight: 700;
 }
@@ -334,19 +334,15 @@ height: 200px;
               font-size: 22px !important;
               margin-top: 30px;
             }
-            .illustrations:hover {
-      transform: scaleY(-1);
-      box-shadow: 10px -5px white;
-      background-color: teal;
-    }
+     
      .view:hover{
      
-      box-shadow: 5px -5px white;
+      box-shadow: 5px -5px black;
     
        }
         .article:hover{
       
-      box-shadow: 5px -5px white;
+      box-shadow: 5px -5px black;
     
        }
     
