@@ -179,8 +179,7 @@ top: 20px;
 
 }
 #contact{
-    border-right: 2px white solid;
-     border-left: 2px white solid;
+border-left: 2px solid black;
     font-size: 30px;
     font-weight: 700;
     padding: 33px;
